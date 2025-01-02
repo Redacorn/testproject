@@ -1,13 +1,19 @@
 <script>
-    let message = "Hello, Electron + Svelte + Tailwind!";
-</script>
-
-<main class="h-screen flex items-center justify-center bg-gray-100">
-    <h1 class="text-4xl font-bold text-blue-600">{message}</h1>
-</main>
-
-<style>
-    main {
-        font-family: Arial, sans-serif;
-    }
-</style>
+	import Layout from './components/Layout.svelte';
+  </script>
+  
+  <main class="w-full h-full">
+	<Layout />
+  </main>
+  
+  <style>
+	main {
+	  margin: 0;
+	  padding: 0;
+	  height: 100vh;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+  </style>
+  

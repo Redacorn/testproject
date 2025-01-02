@@ -1,11 +1,15 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
   content: [
-    "./src/**/*.{html,js,svelte,ts}", // Svelte 파일도 포함
-    "./public/index.html"            // HTML 파일 포함
+    "./src/**/*.{html,js,svelte,ts}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'custom-blue': '#4a90e2',  // SVG에서 추출한 첫 번째 색상
+        'custom-purple': '#9013fe' // SVG에서 추출한 두 번째 색상
+      },
+    },
   },
   plugins: [],
 }
